@@ -1,0 +1,19 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    "module": "NodeNext",
+    "isolatedModules": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ioc:Adonis/Core/*": ["node_modules/@adonisjs/core/build/adonis-typings/*"],
+      "@ioc:Adonis/Addons/*": ["node_modules/@adonisjs/addons/build/adonis-typings/*"]
+    }
+  }
+}
